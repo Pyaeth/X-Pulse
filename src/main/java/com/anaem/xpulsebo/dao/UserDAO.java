@@ -54,6 +54,10 @@ public class UserDAO {
 			if (rs.next()) {
 				setUserDetails(rs, user);
 			}
+			else {
+				System.out.println("Invalid combination of username and password.");
+				return Optional.empty();
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -61,9 +65,11 @@ public class UserDAO {
 	}
 	
 	public Optional<User> addNewUser (User user) throws SQLException {
+		if (retrieveUser(user.getUsername(), user.getPassword()).isPresent()) {
+			return Optional.empty();
+		}
 		stmt2.setString(1, user.getUsername());
 		stmt2.setString(2, user.getPassword());
-		System.out.println(user.getUsername() + " " + user.getPassword());
 		stmt2.executeUpdate();
 		return retrieveUser(user.getUsername(), user.getPassword());
 	}

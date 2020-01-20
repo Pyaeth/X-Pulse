@@ -29,13 +29,13 @@ public class UserController {
 	
 	@SuppressWarnings("rawtypes")
 	@PostMapping(value = "/login")
-    public ResponseEntity getValidLogin(@RequestBody User u) throws Exception {
-		System.out.println("User " + u.getUsername() + " attempted to login.");
-		Optional<User> checkUser = userService.retrieveUser(u.getUsername(), u.getPassword());
+    public ResponseEntity getValidLogin(@RequestBody User user) throws Exception {
+		System.out.println("User " + user.getUsername() + " attempted to login.");
+		Optional<User> checkUser = userService.retrieveUser(user.getUsername(), user.getPassword());
         if (checkUser.isPresent()) {
     		return ResponseEntity.ok(checkUser);
     	} else {
-    		return ResponseEntity.badRequest().body(checkUser.get());
+    		return ResponseEntity.badRequest().body("invalid combination username/password!");
     	}
     	
     }
@@ -47,9 +47,18 @@ public class UserController {
         if (checkUser.isPresent()) {
         	return ResponseEntity.ok(checkUser.get());
         } else {
-            return ResponseEntity.badRequest().body(checkUser.get());
+            return ResponseEntity.badRequest().body("user already exists!");
+        }  
+    }
+    
+    @PostMapping(path="/changeUsername")
+    public ResponseEntity changeUsername(@RequestBody User user) throws Exception { 
+        Optional<User> checkUser = userService.addNewUser(user);
+        if (checkUser.isPresent()) {
+        	return ResponseEntity.ok(checkUser.get());
+        } else {
+            return ResponseEntity.badRequest().body("user already exists!");
         }
-	    
     }
 	
 }
