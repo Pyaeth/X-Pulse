@@ -21,19 +21,27 @@ public class UserService {
     	return dao.deleteUser(u);
     }
     
-    public Optional<User> updateUserDetails(User u) throws Exception {
-    	return dao.updateUserDetails(u);
+    public Optional<User> changeFirstName(User u) throws Exception {
+    	return dao.changeFirstName(u);
+    }
+    
+    public Optional<User> changeLastName(User u) throws Exception {
+    	return dao.changeLastName(u);
+    }
+    
+    public Optional<User> changeRole(User u) throws Exception {
+    	return dao.changeRole(u);
     }
     
     public Optional<User> changeUsername(User u) throws Exception {
     	return dao.changeUsername(u);
     }
     
-    public Optional<User> changePassword(User u)  throws Exception{
-    	return dao.changePassword(u);
+    public Optional<User> changePassword(User u, String nP)  throws Exception {
+    	return dao.changePassword(u, nP);
     }
     
-    public Optional<User> retrieveUser(String username, String password) throws Exception {
-    	return dao.retrieveUser(username, password);
+    public Optional<User> getUserLogin(String username, String password) throws Exception {
+    	return dao.getUserLogin(username, password);
     }
 }

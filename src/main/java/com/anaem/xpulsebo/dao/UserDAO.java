@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Optional;
 
+import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.stereotype.Service;
 
 import com.anaem.xpulsebo.model.User;
@@ -20,33 +21,58 @@ public class UserDAO {
         	con = DBConnection.getDBConnection();
 			String sql1 = "SELECT * FROM users WHERE username = ? AND password = ?";
 			String sql2 = "INSERT INTO users (id, username, password) VALUES (NULL, ?, ?)";
-			String sql3 = "UPDATE users SET firstname = ?, lastname = ?, role = ? WHERE username = ?";
-			String sql4 = "UPDATE users SET username = ? WHERE username = ?";
+			String sql3f = "UPDATE users SET firstname = ? WHERE username = ?";
+			String sql3l = "UPDATE users SET lastname = ? WHERE username = ?";
+			String sql3r = "UPDATE users SET role = ? WHERE username = ?";
+			String sql4 = "UPDATE users SET username = ? WHERE id = ?";
+			String sql4i = "SELECT * FROM users WHERE id = ? AND password = ?";
 			String sql5 = "UPDATE users SET password = ? WHERE username = ?";
 			String sql6 = "DELETE FROM users WHERE username = ?";
+			String sql7 = "SELECT * FROM users WHERE username = ?";
 			this.stmt1 = con.prepareStatement(sql1);
 			this.stmt2 = con.prepareStatement(sql2);
-			this.stmt3 = con.prepareStatement(sql3);
+			this.stmt3f = con.prepareStatement(sql3f);
+			this.stmt3l = con.prepareStatement(sql3l);
+			this.stmt3r = con.prepareStatement(sql3r);
 			this.stmt4 = con.prepareStatement(sql4);
+			this.stmt4i = con.prepareStatement(sql4i);
 			this.stmt5 = con.prepareStatement(sql5);
 			this.stmt6 = con.prepareStatement(sql6);
+			this.stmt7 = con.prepareStatement(sql7);
 		} catch (Exception e){
 			e.printStackTrace();
 		}
     }
 	
-	private PreparedStatement stmt1, stmt2, stmt3, stmt4, stmt5, stmt6;
+	private PreparedStatement stmt1, stmt2, stmt3f, stmt3l, stmt3r, stmt4, stmt4i, stmt5, stmt6, stmt7;
 	
 	private void setUserDetails(ResultSet rs, User user) throws SQLException {
 		user.setId(rs.getInt("id"));
 		user.setUsername(rs.getString("username"));
-		user.setPassword(rs.getString("password"));
+		user.setPassword("");
 		user.setFirstname(rs.getString("firstName"));
 		user.setLastname(rs.getString("lastName"));
 		user.setRole(rs.getString("role"));
 	}
 	
-	public Optional<User> retrieveUser(String username, String password) throws SQLException {
+	public Optional<User> retrieveUser(String username) throws SQLException {
+		stmt7.setString(1, username);
+		User user = new User();
+		try (ResultSet rs = stmt7.executeQuery()){
+			if (rs.next()) {
+				setUserDetails(rs, user);
+			}
+			else {
+				System.out.println("No such username found!");
+				return Optional.empty();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return Optional.ofNullable(user);
+	}
+	
+	public Optional<User> getUserLogin(String username, String password) throws SQLException {
 		stmt1.setString(1, username);
 		stmt1.setString(2, password);
 		User user = new User();
@@ -64,43 +90,84 @@ public class UserDAO {
 		return Optional.ofNullable(user);
 	}
 	
+	public Optional<User> getLoginById(int id, String password) throws SQLException {
+		System.out.println("getLoginById: "+ id + " , " + password);
+		stmt4i.setInt(1, id);
+		stmt4i.setString(2, password);
+		User user = new User();
+		try (ResultSet rs = stmt4i.executeQuery()){
+			if (rs.next()) {
+				setUserDetails(rs, user);
+			}
+			else {
+				System.out.println("Invalid combination of id and password.");
+				return Optional.empty();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return Optional.ofNullable(user);
+	}
+	
 	public Optional<User> addNewUser (User user) throws SQLException {
-		if (retrieveUser(user.getUsername(), user.getPassword()).isPresent()) {
+		if (retrieveUser(user.getUsername()).isPresent()) {
 			return Optional.empty();
 		}
 		stmt2.setString(1, user.getUsername());
 		stmt2.setString(2, user.getPassword());
 		stmt2.executeUpdate();
-		return retrieveUser(user.getUsername(), user.getPassword());
+		return retrieveUser(user.getUsername());
 	}
 	
-	public Optional<User> updateUserDetails (User user) throws SQLException {
-		stmt3.setString(1, user.getFirstname());
-		stmt3.setString(2, user.getLastname());
-		stmt3.setString(3, user.getRole());
-		stmt3.setString(4, user.getUsername());
-		stmt3.executeUpdate();
-		return retrieveUser(user.getUsername(), user.getPassword());
+	public Optional<User> changeFirstName (User user) throws SQLException {
+		
+		stmt3f.setString(2, user.getUsername());
+		stmt3f.setString(1, user.getFirstname());
+		stmt3f.executeUpdate();
+		return retrieveUser(user.getUsername());
+	}
+	
+	public Optional<User> changeLastName (User user) throws SQLException {
+		System.out.println(user);
+		stmt3l.setString(2, user.getUsername());
+		stmt3l.setString(1, user.getLastname());
+		stmt3l.executeUpdate();
+		return retrieveUser(user.getUsername());
+	}
+	
+	public Optional<User> changeRole (User user) throws SQLException {
+		stmt3r.setString(1, user.getUsername());
+		stmt3r.setString(2, user.getRole());
+		stmt3r.executeUpdate();
+		return retrieveUser(user.getUsername());
 	}
 	
 	public Optional<User> changeUsername (User user) throws SQLException {
-		stmt4.setString(1, user.getUsername());
-		stmt4.setString(2, user.getUsername());
-		stmt4.executeUpdate();
-		return retrieveUser(user.getUsername(), user.getPassword());
+		if (getLoginById(user.getId(), user.getPassword()).isPresent()) {
+			System.out.println("getLoginById isPresent");
+			if (!retrieveUser(user.getUsername()).isPresent()) {
+				System.out.println("retrieveUser isPresent");
+				stmt4.setInt(2, user.getId());
+				stmt4.setString(1, user.getUsername());
+				stmt4.executeUpdate();
+			}
+		}
+		return retrieveUser(user.getUsername());
 	}
-	
-	public Optional<User> changePassword (User user) throws SQLException {
-		stmt5.setString(1, user.getPassword());
-		stmt5.setString(2, user.getUsername());
-		stmt5.executeUpdate();
-		return retrieveUser(user.getUsername(), user.getPassword());
+	  
+	public Optional<User> changePassword (User user, String nP) throws SQLException {
+		if (getUserLogin(user.getUsername(),user.getPassword()).isPresent()) {
+			stmt5.setString(1, nP);
+			stmt5.setString(2, user.getUsername());
+			stmt5.executeUpdate();
+		}
+		return retrieveUser(user.getUsername());
 	}
 	
 	public Optional<User> deleteUser (User user) throws SQLException {
 		stmt6.setString(1, user.getUsername());
 		stmt6.executeUpdate();
 		stmt6.executeUpdate();
-		return retrieveUser(user.getUsername(), user.getPassword());
+		return retrieveUser(user.getUsername());
 	}
 }

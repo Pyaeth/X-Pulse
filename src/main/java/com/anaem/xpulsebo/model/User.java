@@ -57,5 +57,14 @@ public class User {
 	public void setRole(String role) {
 		this.role = role;
 	}
+	
+	@Override
+	public String toString() {
+		return "\"" + this.username + "\":{\n" + 
+				"{id: " + this.id + "},\n" +
+				"{firstname: " + this.firstname + "},\n" +
+				"{lastname: " + this.lastname + "},\n" +
+				"{role: " + this.role + "},\n}";
+	}
 
 }
