@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.anaem.xpulsebo.model.User;
 import com.anaem.xpulsebo.service.UserService;
+import com.anaem.xpulsebo.utils.AES;
+import com.anaem.xpulsebo.utils.Consts;
 
 
 @RestController
@@ -31,11 +33,12 @@ public class UserController {
 	@SuppressWarnings("rawtypes")
 	@PostMapping(value = "/login")
     public ResponseEntity getValidLogin(@RequestBody User user) throws Exception {
-		System.out.println("User " + user.getUsername() + " attempted to login.");
 		Optional<User> checkUser = userService.getUserLogin(user.getUsername(), user.getPassword());
         if (checkUser.isPresent()) {
+        	System.out.println("User " + user.getUsername() + " attempted to login: " + "Successful!");
     		return ResponseEntity.ok(checkUser);
     	} else {
+    		System.out.print("User " + user.getUsername() + " attempted to login: " + "Failed!");
     		return ResponseEntity.badRequest().body("invalid combination username/password!");
     	}
     	
@@ -84,7 +87,7 @@ public class UserController {
 			return newPassword;
 		}
 		public void setNewPassword(String newPass) {
-			this.newPassword = DigestUtils.sha512Hex(newPass);
+			this.newPassword = newPass;
 		}
 		@Override
 		public String toString() {
@@ -97,8 +100,7 @@ public class UserController {
     	User user = new User();
     	user.setUsername(p.username);
     	user.setPassword(p.getOldPassword());
-    	System.out.println(p);
-        Optional<User> checkUser = userService.changePassword(user, p.getNewPassword());
+        Optional<User> checkUser = userService.changePassword(user, AES.encrypt(p.getNewPassword(), Consts.getSecretkey()));
         if (checkUser.isPresent()) {
         	return ResponseEntity.ok(checkUser.get());
         } else {

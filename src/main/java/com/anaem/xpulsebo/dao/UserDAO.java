@@ -11,7 +11,6 @@ import org.springframework.stereotype.Service;
 
 import com.anaem.xpulsebo.model.User;
 
-@Service
 public class UserDAO {
 	
     Connection con;
@@ -49,7 +48,7 @@ public class UserDAO {
 	private void setUserDetails(ResultSet rs, User user) throws SQLException {
 		user.setId(rs.getInt("id"));
 		user.setUsername(rs.getString("username"));
-		user.setPassword("");
+		user.setPassword(null);
 		user.setFirstname(rs.getString("firstName"));
 		user.setLastname(rs.getString("lastName"));
 		user.setRole(rs.getString("role"));
@@ -91,7 +90,6 @@ public class UserDAO {
 	}
 	
 	public Optional<User> getLoginById(int id, String password) throws SQLException {
-		System.out.println("getLoginById: "+ id + " , " + password);
 		stmt4i.setInt(1, id);
 		stmt4i.setString(2, password);
 		User user = new User();
@@ -128,7 +126,6 @@ public class UserDAO {
 	}
 	
 	public Optional<User> changeLastName (User user) throws SQLException {
-		System.out.println(user);
 		stmt3l.setString(2, user.getUsername());
 		stmt3l.setString(1, user.getLastname());
 		stmt3l.executeUpdate();

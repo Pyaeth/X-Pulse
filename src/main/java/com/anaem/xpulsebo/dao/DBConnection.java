@@ -9,24 +9,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
+import com.anaem.xpulsebo.utils.Consts;
+
 @Configuration
 @PropertySource("classpath:application.properties")
 public class DBConnection {
 
-	/*
-	 * @Value("${jdbc.url}") private String url;
-	 * 
-	 * @Value("${jdbc.user}") private String user;
-	 * 
-	 * @Value("${jdbc.password}") private String password;
-	 * 
-	 * @Value("${jdbc.className}") private String className;
-	 */
-    
-	private static String password = "";
-	private static String className = "com.mysql.jdbc.Driver";
-	private static String url = "jdbc:mysql://localhost/xpulsebo?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-	private static String user = "root";
+	private static String password = Consts.getPassword();
+	private static String className = Consts.getClassname();
+	private static String url = Consts.getUrl();
+	private static String user = Consts.getUser();
 	
     public static Connection getDBConnection() throws SQLException {
 

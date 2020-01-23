@@ -1,6 +1,7 @@
 package com.anaem.xpulsebo.model;
 
-import org.apache.commons.codec.digest.DigestUtils;
+import com.anaem.xpulsebo.utils.AES;
+import com.anaem.xpulsebo.utils.Consts;
 
 public class User {
 	private int id;
@@ -31,7 +32,11 @@ public class User {
 	}
 
 	public void setPassword(String password) {
-		this.password = DigestUtils.sha512Hex(password);
+		if(password != null) {
+		this.password = AES.encrypt(password, Consts.getSecretKey());
+		} else {
+			this.password = "";
+		}
 	}
 
 	public String getFirstname() {
@@ -61,6 +66,7 @@ public class User {
 	@Override
 	public String toString() {
 		return "\"" + this.username + "\":{\n" + 
+				"{password: " + this.password + "},\n" +
 				"{id: " + this.id + "},\n" +
 				"{firstname: " + this.firstname + "},\n" +
 				"{lastname: " + this.lastname + "},\n" +
