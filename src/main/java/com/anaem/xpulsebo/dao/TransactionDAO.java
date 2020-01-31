@@ -23,7 +23,7 @@ public class TransactionDAO {
 			String sql2 = "INSERT INTO transactions(tid, uid, drequest, dprocess, type, details, amount) VALUES (NULL, ?, ?, ?, ?, ?, ?)";
 			
 			//get all transactions from the past week/month/year
-			String sql3 = "SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id and u.id = ? AND t.drequest >= DATE(NOW() - INTERVAL ?)";
+			String sql3 = "SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id and u.id = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 ?)";
 			
 			//get transaction summary from previous week/month/year
 			String sql4 = "SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id and u.id = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 ?) AND DATE(NOW() - INTERVAL 1 ?)";

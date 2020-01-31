@@ -15,42 +15,35 @@ import org.springframework.web.bind.annotation.RestController;
 import com.anaem.xpulsebo.model.Statistic;
 import com.anaem.xpulsebo.model.Transaction;
 import com.anaem.xpulsebo.service.TransactionService;
+import com.anaem.xpulsebo.utils.FEStats;
 
 @RestController
 @EnableAutoConfiguration
-@CrossOrigin(
-        allowCredentials = "true",
-        origins = "*",
-        allowedHeaders = "*",
-        methods = {RequestMethod.GET,RequestMethod.POST,RequestMethod.DELETE,RequestMethod.PUT}
-)
+@CrossOrigin(allowCredentials = "true", origins = "*", allowedHeaders = "*", methods = { RequestMethod.GET,
+		RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT })
 public class TransactionController {
 	TransactionService transactionService = new TransactionService();
-	
-	@PostMapping(value = "/transaction/all/{unit}")
-    public ResponseEntity retrieveAllTransactions(@RequestBody Transaction transaction, @PathVariable String unit) throws Exception {
-		Optional<Statistic> statistic = transactionService.retrieveTransactionsInPeriod(transaction.getUid(), unit);
-        if (statistic.isPresent()) {
-    		return ResponseEntity.ok(statistic);
-    	} else {
-    		return ResponseEntity.badRequest().body("Invalid UID.");
-    	}
-    	
-    }
-	
-	protected class FEStats {
-		int uid;
-		String unit;
-	}
-	
+
+	/*
+	 * @PostMapping(value = "/transaction/all/{unit}") public ResponseEntity
+	 * retrieveAllTransactions(@RequestBody Transaction transaction, @PathVariable
+	 * String unit) throws Exception { Optional<Statistic> statistic =
+	 * transactionService.retrieveTransactionsInPeriod(transaction.getUid(), unit);
+	 * if (statistic.isPresent()) { return ResponseEntity.ok(statistic); } else {
+	 * return ResponseEntity.badRequest().body("Invalid UID."); }
+	 * 
+	 * }
+	 */
+
 	@PostMapping(value = "/statistics")
-    public ResponseEntity retrieveStatistics(@RequestBody FEStats input) throws Exception {
+	public ResponseEntity retrieveStatistics(@RequestBody FEStats input) throws Exception {
+		System.out.println(input);
+
 		Optional<Statistic> statistic = transactionService.retrieveTransactionsInPeriod(input.uid, input.unit);
-        if (statistic.isPresent()) {
-    		return ResponseEntity.ok(statistic);
-    	} else {
-    		return ResponseEntity.badRequest().body("Invalid UID.");
-    	}
-    	
-    }
+		if (statistic.isPresent()) {
+			return ResponseEntity.ok(statistic);
+		} else {
+			return ResponseEntity.badRequest().body("Invalid UID.");
+		}
+	}
 }
