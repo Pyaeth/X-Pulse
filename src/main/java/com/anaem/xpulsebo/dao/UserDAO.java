@@ -72,6 +72,7 @@ public class UserDAO {
 	}
 	
 	public Optional<User> getUserLogin(String username, String password) throws SQLException {
+		System.out.println(username + " " + password);
 		stmt1.setString(1, username);
 		stmt1.setString(2, password);
 		User user = new User();
