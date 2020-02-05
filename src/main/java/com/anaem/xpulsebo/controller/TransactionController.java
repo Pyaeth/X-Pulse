@@ -1,20 +1,29 @@
 package com.anaem.xpulsebo.controller;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.sql.Date;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.anaem.xpulsebo.model.Statistic;
 import com.anaem.xpulsebo.model.Transaction;
 import com.anaem.xpulsebo.service.TransactionService;
+import com.anaem.xpulsebo.utils.CSVDateParser;
 import com.anaem.xpulsebo.utils.FEStats;
 
 @RestController
@@ -24,26 +33,48 @@ import com.anaem.xpulsebo.utils.FEStats;
 public class TransactionController {
 	TransactionService transactionService = new TransactionService();
 
-	/*
-	 * @PostMapping(value = "/transaction/all/{unit}") public ResponseEntity
-	 * retrieveAllTransactions(@RequestBody Transaction transaction, @PathVariable
-	 * String unit) throws Exception { Optional<Statistic> statistic =
-	 * transactionService.retrieveTransactionsInPeriod(transaction.getUid(), unit);
-	 * if (statistic.isPresent()) { return ResponseEntity.ok(statistic); } else {
-	 * return ResponseEntity.badRequest().body("Invalid UID."); }
-	 * 
-	 * }
-	 */
-
 	@PostMapping(value = "/statistics")
 	public ResponseEntity retrieveStatistics(@RequestBody FEStats input) throws Exception {
 		System.out.println(input);
 
-		Optional<Statistic> statistic = transactionService.retrieveTransactionsInPeriod(input.uid, input.unit);
+		Optional<Statistic> statistic = transactionService.retrieveTransactionsInPeriod(input.uid,
+				input.unit.toUpperCase());
 		if (statistic.isPresent()) {
 			return ResponseEntity.ok(statistic);
 		} else {
 			return ResponseEntity.badRequest().body("Invalid UID.");
+		}
+	}
+
+	@RequestMapping(method = RequestMethod.POST, value = "/uploadCSV")
+	public void handleFileUpload(@RequestParam MultipartFile file) throws IOException {
+		if (file != null) {
+
+			if (!file.getOriginalFilename().endsWith("csv")) {
+				System.out.println("INVALID FILE FORMAT!! --- > File " + file.getOriginalFilename());
+			} else {
+
+				BufferedReader br = new BufferedReader(new InputStreamReader(file.getInputStream()));
+				List<String> lines = new ArrayList<>();
+				lines.addAll(br.lines().collect(Collectors.toList()));
+				br.close();
+				for (String line : lines) {
+
+					String[] records = line.split(",");
+					if (!records[0].isEmpty()) {
+						Transaction t = new Transaction();
+						t.setDprocess(CSVDateParser.parseCSVDate(records[0]));
+						t.setDetails(records[2]);
+						if (!records[5].isEmpty()) {
+							t.setAmount(-Float.parseFloat(records[5].replaceAll(".", "").replaceAll(",", ".")));
+						}
+						if (!records[7].isEmpty()) {
+							t.setAmount(Float.parseFloat(records[7].replaceAll(".", "").replaceAll(",", ".")));
+						}
+					}
+
+				}
+			}
 		}
 	}
 }

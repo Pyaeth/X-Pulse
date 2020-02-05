@@ -1,7 +1,6 @@
 package com.anaem.xpulsebo.model;
 
 import java.sql.Date;
-import java.time.LocalDate;
 
 public class Transaction {
 	private int tid;
@@ -54,5 +53,10 @@ public class Transaction {
 		this.amount = amount;
 	}
 	
+	@Override
+	public String toString() {
+		return "Transaction [tid=" + tid + ", uid=" + uid + ", drequest=" + drequest + ", dprocess=" + dprocess
+				+ ", type=" + type + ", details=" + details + ", amount=" + amount + "]";
+	}
 	
 }
