@@ -58,11 +58,12 @@ public class TransactionController {
 				List<String> lines = new ArrayList<>();
 				lines.addAll(br.lines().collect(Collectors.toList()));
 				br.close();
+				Transaction t = null;
 				for (String line : lines) {
-
+					
 					String[] records = line.split(",");
-					if (!records[0].isEmpty()) {
-						Transaction t = new Transaction();
+					if (!records[0].isEmpty()) { //new transaction header
+						t = new Transaction();
 						t.setDprocess(CSVDateParser.parseCSVDate(records[0]));
 						t.setDetails(records[2]);
 						if (!records[5].isEmpty()) {
@@ -71,6 +72,11 @@ public class TransactionController {
 						if (!records[7].isEmpty()) {
 							t.setAmount(Float.parseFloat(records[7].replaceAll(".", "").replaceAll(",", ".")));
 						}
+					} else if (!records[2].isEmpty() && records[1].isEmpty()) { //transaction details and NOT the header of the document
+						if (records[2].length() == 29 && CSVDateParser.matches(records[2].split(" ")[0])) {
+							t.setDrequest(CSVDateParser.parseDate(records[2].split(" ")[0]));
+						}
+						t.setDetails(t.getDetails() + "\n" + line);
 					}
 
 				}
