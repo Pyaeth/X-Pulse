@@ -1,9 +1,9 @@
 package com.anaem.xpulsebo.utils;
 
 public class Consts {
-	private static final String password = "";
-	private static final String className = "com.mysql.jdbc.Driver";
-	private static final String url = "jdbc:mysql://localhost/xpulsebo?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+	private static final String password = "aembopc1";
+	private static final String className = "org.mariadb.jdbc.Driver";
+	private static final String url = "jdbc:mariadb://10.10.0.14:3306/xpulsebo?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 	private static final String user = "root";
 	public static String getPassword() {
 		return password;
