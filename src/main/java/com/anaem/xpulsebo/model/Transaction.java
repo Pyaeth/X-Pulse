@@ -10,6 +10,14 @@ public class Transaction {
 	private String type;
 	private String details;
 	private float amount;
+	private String name;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	public int getTid() {
 		return tid;
 	}

@@ -57,6 +57,7 @@ public class UserController {
     
     @PostMapping(path="/changeUsername")
     public ResponseEntity changeUsername(@RequestBody User user) throws Exception { 
+    	System.out.println(user);
         Optional<User> checkUser = userService.changeUsername(user);
         if (checkUser.isPresent()) {
         	return ResponseEntity.ok(checkUser.get());

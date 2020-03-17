@@ -81,7 +81,7 @@ public class TransactionDAO {
 
 	public Optional<List<Transaction>> retrieveTransactionsInPeriod(int uid, String interval) throws SQLException {
 		String sql32 = sql3 + interval + ")";
-		System.out.println(sql32);
+		//System.out.println(sql32);
 		this.stmt3 = con.prepareStatement(sql32);
 		stmt3.setInt(1, uid);
 		List<Transaction> transactions = new ArrayList<>();
@@ -99,7 +99,7 @@ public class TransactionDAO {
 
 	public Optional<List<Transaction>> retrieveTransactionsLastPeriod(int uid, String interval) throws SQLException {
 		String sql42 = sql4 + "2 " + interval + ") AND DATE(NOW() - INTERVAL 1 " + interval + ")";
-		System.out.println(sql42);
+		//System.out.println(sql42);
 		this.stmt4 = con.prepareStatement(sql42);
 		stmt4.setInt(1, uid);
 		List<Transaction> transactions = new ArrayList<>();
@@ -141,7 +141,7 @@ public class TransactionDAO {
 		} else {
 			sql62 += "AND t.amount < 0 ";
 		}
-		System.out.println(sql62);
+		//System.out.println(sql62);
 		stmt6 = con.prepareStatement(sql62);
 		stmt6.setInt(1, uid);
 		try (ResultSet rs = stmt6.executeQuery()) {
@@ -162,7 +162,7 @@ public class TransactionDAO {
 		} else {
 			sql72 += "AND t.amount < 0 ";
 		}
-		System.out.println(sql72);
+		//System.out.println(sql72);
 		this.stmt7 = con.prepareStatement(sql72);
 		stmt7.setInt(1, uid);
 		try (ResultSet rs = stmt7.executeQuery()) {
@@ -178,7 +178,7 @@ public class TransactionDAO {
 	public float sumTransactionsLast(int uid, String interval) throws SQLException {
 		float result = 0;
 		String sql82 = sql8 + interval + ") AND DATE(NOW() - INTERVAL 1 " + interval + ")";
-		System.out.println(sql82);
+		//System.out.println(sql82);
 		this.stmt8 = con.prepareStatement(sql82);
 		stmt8.setInt(1, uid);
 		try (ResultSet rs = stmt8.executeQuery()) {

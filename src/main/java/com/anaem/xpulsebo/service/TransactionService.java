@@ -37,7 +37,6 @@ public class TransactionService {
 		
 		System.out.println("Transactions retrieved:");
 		transactions.forEach(System.out::println);
-		
 		statistic.statisticsFlt = new HashMap<>();
 		statistic.statisticsInt = new HashMap<>();
 		
