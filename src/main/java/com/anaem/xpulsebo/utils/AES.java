@@ -9,10 +9,16 @@ import java.util.Base64;
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.anaem.xpulsebo.dao.TransactionDAO;
+
 public class AES {
 
 	private static SecretKeySpec secretKey;
 	private static byte[] key;
+	private static final Logger logger = LogManager.getLogger(AES.class);
 
 	public static void setKey(String myKey) {
 		MessageDigest sha = null;
@@ -23,9 +29,9 @@ public class AES {
 			key = Arrays.copyOf(key, 16);
 			secretKey = new SecretKeySpec(key, "AES");
 		} catch (NoSuchAlgorithmException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 	}
 
@@ -36,7 +42,7 @@ public class AES {
 			cipher.init(Cipher.ENCRYPT_MODE, secretKey);
 			return Base64.getEncoder().encodeToString(cipher.doFinal(strToEncrypt.getBytes("UTF-8")));
 		} catch (Exception e) {
-			System.out.println("Error while encrypting: " + e.toString());
+			logger.error("Error while encrypting: " + e.toString());
 		}
 		return null;
 	}
@@ -48,7 +54,7 @@ public class AES {
 			cipher.init(Cipher.DECRYPT_MODE, secretKey);
 			return new String(cipher.doFinal(Base64.getDecoder().decode(strToDecrypt)));
 		} catch (Exception e) {
-			System.out.println("Error while decrypting: " + e.toString());
+			logger.error("Error while decrypting: " + e.toString());
 		}
 		return null;
 	}

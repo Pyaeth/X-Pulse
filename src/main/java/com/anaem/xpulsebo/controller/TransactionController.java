@@ -9,6 +9,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -32,10 +34,11 @@ import com.anaem.xpulsebo.utils.FEStats;
 		RequestMethod.POST, RequestMethod.DELETE, RequestMethod.PUT })
 public class TransactionController {
 	TransactionService transactionService = new TransactionService();
+	private static final Logger logger = LogManager.getLogger(TransactionController.class);
 
 	@PostMapping(value = "/statistics")
 	public ResponseEntity retrieveStatistics(@RequestBody FEStats input) throws Exception {
-		System.out.println(input);
+		logger.debug(input);
 
 		Optional<Statistic> statistic = transactionService.retrieveTransactionsInPeriod(input.uid,
 				input.unit.toUpperCase());
@@ -51,7 +54,7 @@ public class TransactionController {
 		if (file != null) {
 
 			if (!file.getOriginalFilename().endsWith("csv")) {
-				System.out.println("INVALID FILE FORMAT!! --- > File " + file.getOriginalFilename());
+				logger.error("INVALID FILE FORMAT!! --- > File " + file.getOriginalFilename());
 			} else {
 
 				BufferedReader br = new BufferedReader(new InputStreamReader(file.getInputStream()));

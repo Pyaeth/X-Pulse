@@ -8,11 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.anaem.xpulsebo.controller.UserController;
 import com.anaem.xpulsebo.model.Transaction;
 
 public class TransactionDAO {
 
 	Connection con;
+	private static final Logger logger = LogManager.getLogger(TransactionDAO.class);
 
 	public TransactionDAO() {
 		try {
@@ -34,7 +39,7 @@ public class TransactionDAO {
 			// comparedToLast
 			sql8 = "SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 ";
 		} catch (Exception e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 	}
 
@@ -62,7 +67,7 @@ public class TransactionDAO {
 				transactions.add(tr);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		return Optional.ofNullable(transactions);
 	}
@@ -81,7 +86,7 @@ public class TransactionDAO {
 
 	public Optional<List<Transaction>> retrieveTransactionsInPeriod(int uid, String interval) throws SQLException {
 		String sql32 = sql3 + interval + ")";
-		//System.out.println(sql32);
+		logger.info(sql32);
 		this.stmt3 = con.prepareStatement(sql32);
 		stmt3.setInt(1, uid);
 		List<Transaction> transactions = new ArrayList<>();
@@ -92,14 +97,14 @@ public class TransactionDAO {
 				transactions.add(tr);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		return Optional.ofNullable(transactions);
 	}
 
 	public Optional<List<Transaction>> retrieveTransactionsLastPeriod(int uid, String interval) throws SQLException {
 		String sql42 = sql4 + "2 " + interval + ") AND DATE(NOW() - INTERVAL 1 " + interval + ")";
-		//System.out.println(sql42);
+		logger.info(sql42);
 		this.stmt4 = con.prepareStatement(sql42);
 		stmt4.setInt(1, uid);
 		List<Transaction> transactions = new ArrayList<>();
@@ -110,7 +115,7 @@ public class TransactionDAO {
 				transactions.add(tr);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		return Optional.ofNullable(transactions);
 	}
@@ -128,7 +133,7 @@ public class TransactionDAO {
 				return Optional.empty();
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		return Optional.ofNullable(transaction);
 	}
@@ -141,7 +146,7 @@ public class TransactionDAO {
 		} else {
 			sql62 += "AND t.amount < 0 ";
 		}
-		//System.out.println(sql62);
+		logger.info(sql62);
 		stmt6 = con.prepareStatement(sql62);
 		stmt6.setInt(1, uid);
 		try (ResultSet rs = stmt6.executeQuery()) {
@@ -149,7 +154,7 @@ public class TransactionDAO {
 				result = rs.getInt(1);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		return result;
 	}
@@ -162,7 +167,7 @@ public class TransactionDAO {
 		} else {
 			sql72 += "AND t.amount < 0 ";
 		}
-		//System.out.println(sql72);
+		logger.info(sql72);
 		this.stmt7 = con.prepareStatement(sql72);
 		stmt7.setInt(1, uid);
 		try (ResultSet rs = stmt7.executeQuery()) {
@@ -170,7 +175,7 @@ public class TransactionDAO {
 				result = rs.getFloat(1);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		return result;
 	}
@@ -178,7 +183,7 @@ public class TransactionDAO {
 	public float sumTransactionsLast(int uid, String interval) throws SQLException {
 		float result = 0;
 		String sql82 = sql8 + interval + ") AND DATE(NOW() - INTERVAL 1 " + interval + ")";
-		//System.out.println(sql82);
+		logger.info(sql82);
 		this.stmt8 = con.prepareStatement(sql82);
 		stmt8.setInt(1, uid);
 		try (ResultSet rs = stmt8.executeQuery()) {
@@ -186,7 +191,7 @@ public class TransactionDAO {
 				result = rs.getFloat(1);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		return result;
 	}

@@ -7,6 +7,8 @@ import java.sql.SQLException;
 import java.util.Optional;
 
 import org.apache.commons.codec.digest.DigestUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 
 import com.anaem.xpulsebo.model.User;
@@ -14,7 +16,8 @@ import com.anaem.xpulsebo.model.User;
 public class UserDAO {
 	
     Connection con;
-	
+    private static final Logger logger = LogManager.getLogger(UserDAO.class);
+    
 	public UserDAO() {
         try {
         	con = DBConnection.getDBConnection();
@@ -39,7 +42,7 @@ public class UserDAO {
 			this.stmt6 = con.prepareStatement(sql6);
 			this.stmt7 = con.prepareStatement(sql7);
 		} catch (Exception e){
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
     }
 	
@@ -62,17 +65,17 @@ public class UserDAO {
 				setUserDetails(rs, user);
 			}
 			else {
-				System.out.println("No such username found!");
+				logger.warn("No such username found!");
 				return Optional.empty();
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		return Optional.ofNullable(user);
 	}
 	
 	public Optional<User> getUserLogin(String username, String password) throws SQLException {
-		System.out.println(username + " " + password);
+		logger.debug(username + " " + password);
 		stmt1.setString(1, username);
 		stmt1.setString(2, password);
 		User user = new User();
@@ -81,11 +84,11 @@ public class UserDAO {
 				setUserDetails(rs, user);
 			}
 			else {
-				System.out.println("Invalid combination of username and password.");
+				logger.warn("Invalid combination of username and password.");
 				return Optional.empty();
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		return Optional.ofNullable(user);
 	}
@@ -99,11 +102,11 @@ public class UserDAO {
 				setUserDetails(rs, user);
 			}
 			else {
-				System.out.println("Invalid combination of id and password.");
+				logger.warn("Invalid combination of id and password.");
 				return Optional.empty();
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error(e.getMessage());
 		}
 		return Optional.ofNullable(user);
 	}
@@ -142,9 +145,9 @@ public class UserDAO {
 	
 	public Optional<User> changeUsername (User user) throws SQLException {
 		if (getLoginById(user.getId(), user.getPassword()).isPresent()) {
-			System.out.println("getLoginById isPresent");
+			logger.debug("getLoginById isPresent");
 			if (!retrieveUser(user.getUsername()).isPresent()) {
-				System.out.println("retrieveUser isPresent");
+				logger.debug("retrieveUser isPresent");
 				stmt4.setInt(2, user.getId());
 				stmt4.setString(1, user.getUsername());
 				stmt4.executeUpdate();

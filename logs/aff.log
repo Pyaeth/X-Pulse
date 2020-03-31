@@ -1,0 +1,28 @@
+ INFO 2020-03-19 09:44:39.531 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 22612 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-03-19 09:44:39.532 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-03-19 09:44:39.532 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-03-19 09:44:40.029 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.548 seconds (JVM running for 517.822)
+DEBUG 2020-03-19 09:44:49.793 --- [0.1-8081-exec-1] c.a.x.c.TransactionController            : uid: 1; unit: month
+DEBUG 2020-03-19 09:44:49.793 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : DB queries: 
+ INFO 2020-03-19 09:44:49.793 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH)
+ INFO 2020-03-19 09:44:49.801 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-03-19 09:44:49.805 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-03-19 09:44:49.809 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-03-19 09:44:49.814 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-03-19 09:44:49.819 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 MONTH) AND DATE(NOW() - INTERVAL 1 MONTH)
+DEBUG 2020-03-19 09:44:49.823 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : Transactions retrieved:
+ INFO 2020-03-19 09:46:16.273 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 22612 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-03-19 09:46:16.274 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-03-19 09:46:16.274 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-03-19 09:46:16.705 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.479 seconds (JVM running for 614.499)
+DEBUG 2020-03-19 09:46:23.495 --- [0.1-8081-exec-1] c.a.x.c.TransactionController            : uid: 1; unit: month
+DEBUG 2020-03-19 09:46:23.495 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : DB queries: 
+ INFO 2020-03-19 09:46:23.495 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH)
+ INFO 2020-03-19 09:46:23.502 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-03-19 09:46:23.507 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-03-19 09:46:23.512 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-03-19 09:46:23.516 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-03-19 09:46:23.519 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 MONTH) AND DATE(NOW() - INTERVAL 1 MONTH)
+DEBUG 2020-03-19 09:46:23.524 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : Transactions retrieved:
+DEBUG 2020-03-19 09:46:23.525 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : Transaction [tid=5, uid=1, drequest=2020-02-29, dprocess=2020-02-29, type=Incasare, details=Referinta:1634;Ordonator:Micu Ana;Din contul:RO76INGB0000999908307205, amount=500.0]
+DEBUG 2020-03-19 09:46:23.525 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : Transaction [tid=6, uid=1, drequest=2020-02-20, dprocess=2020-02-22, type=Cumparare POS, details=Nr. card:**** **** **** 0843;Terminal:ENEEA RO BUCURESTI, amount=-105.0]

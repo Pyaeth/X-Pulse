@@ -1,0 +1,74 @@
+ INFO 2020-03-19 13:27:06.742 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 6324 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-03-19 13:27:06.749 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-03-19 13:27:06.750 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-03-19 13:33:33.805 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 10072 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-03-19 13:33:33.811 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-03-19 13:33:33.812 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-03-19 13:35:56.263 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 14840 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-03-19 13:35:56.269 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-03-19 13:35:56.270 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-03-19 13:38:29.272 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 12660 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-03-19 13:38:29.278 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-03-19 13:38:29.278 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-03-19 13:38:41.248 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 8552 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-03-19 13:38:41.254 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-03-19 13:38:41.255 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-03-19 13:40:13.049 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 856 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-03-19 13:40:13.055 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-03-19 13:40:13.056 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-03-19 13:42:45.555 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 540 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-03-19 13:42:45.561 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-03-19 13:42:45.561 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-03-19 13:43:47.776 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 21360 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-03-19 13:43:47.781 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-03-19 13:43:47.782 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-03-19 13:44:26.598 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 6948 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-03-19 13:44:26.604 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-03-19 13:44:26.604 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-03-19 13:45:22.465 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 19908 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-03-19 13:45:22.470 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-03-19 13:45:22.471 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-03-19 13:45:23.829 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 1.647 seconds (JVM running for 2.889)
+ INFO 2020-03-19 13:45:33.453 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 19908 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-03-19 13:45:33.454 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-03-19 13:45:33.454 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-03-19 13:45:33.913 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.513 seconds (JVM running for 12.973)
+ INFO 2020-03-19 13:46:44.971 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 19908 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-03-19 13:46:44.972 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-03-19 13:46:44.972 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-03-19 13:46:45.388 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.466 seconds (JVM running for 84.448)
+DEBUG 2020-03-19 13:46:47.342 --- [0.1-8081-exec-2] c.a.x.d.UserDAO                          : Admin2 uFErWAnGrvRK4tNOF7tCWw==
+DEBUG 2020-03-19 13:46:47.346 --- [0.1-8081-exec-2] c.a.x.c.UserController                   : User Admin2 attempted to login: Successful!
+DEBUG 2020-03-19 13:46:47.440 --- [0.1-8081-exec-4] c.a.x.c.TransactionController            : uid: 1; unit: month
+DEBUG 2020-03-19 13:46:47.440 --- [0.1-8081-exec-4] c.a.x.d.TransactionDAO                   : DB queries: 
+ INFO 2020-03-19 13:46:47.440 --- [0.1-8081-exec-4] c.a.x.d.TransactionDAO                   : SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH)
+ INFO 2020-03-19 13:46:47.446 --- [0.1-8081-exec-4] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-03-19 13:46:47.450 --- [0.1-8081-exec-4] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-03-19 13:46:47.454 --- [0.1-8081-exec-4] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-03-19 13:46:47.458 --- [0.1-8081-exec-4] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-03-19 13:46:47.461 --- [0.1-8081-exec-4] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 MONTH) AND DATE(NOW() - INTERVAL 1 MONTH)
+DEBUG 2020-03-19 13:46:47.465 --- [0.1-8081-exec-4] c.a.x.d.TransactionDAO                   : Transactions retrieved:
+DEBUG 2020-03-19 13:46:47.466 --- [0.1-8081-exec-4] c.a.x.d.TransactionDAO                   : Transaction [tid=5, uid=1, drequest=2020-02-29, dprocess=2020-02-29, type=Incasare, details=Referinta:1634;Ordonator:Micu Ana;Din contul:RO76INGB0000999908307205, amount=500.0]
+DEBUG 2020-03-19 13:46:47.467 --- [0.1-8081-exec-4] c.a.x.d.TransactionDAO                   : Transaction [tid=6, uid=1, drequest=2020-02-20, dprocess=2020-02-22, type=Cumparare POS, details=Nr. card:**** **** **** 0843;Terminal:ENEEA RO BUCURESTI, amount=-105.0]
+DEBUG 2020-03-19 13:47:51.651 --- [0.1-8081-exec-7] c.a.x.c.TransactionController            : uid: 1; unit: month
+DEBUG 2020-03-19 13:47:51.652 --- [0.1-8081-exec-7] c.a.x.d.TransactionDAO                   : DB queries: 
+ INFO 2020-03-19 13:47:51.652 --- [0.1-8081-exec-7] c.a.x.d.TransactionDAO                   : SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH)
+ INFO 2020-03-19 13:47:51.657 --- [0.1-8081-exec-7] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-03-19 13:47:51.661 --- [0.1-8081-exec-7] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-03-19 13:47:51.665 --- [0.1-8081-exec-7] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-03-19 13:47:51.668 --- [0.1-8081-exec-7] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-03-19 13:47:51.672 --- [0.1-8081-exec-7] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 MONTH) AND DATE(NOW() - INTERVAL 1 MONTH)
+DEBUG 2020-03-19 13:47:51.676 --- [0.1-8081-exec-7] c.a.x.d.TransactionDAO                   : Transactions retrieved:
+DEBUG 2020-03-19 13:47:51.676 --- [0.1-8081-exec-7] c.a.x.d.TransactionDAO                   : Transaction [tid=5, uid=1, drequest=2020-02-29, dprocess=2020-02-29, type=Incasare, details=Referinta:1634;Ordonator:Micu Ana;Din contul:RO76INGB0000999908307205, amount=500.0]
+DEBUG 2020-03-19 13:47:51.676 --- [0.1-8081-exec-7] c.a.x.d.TransactionDAO                   : Transaction [tid=6, uid=1, drequest=2020-02-20, dprocess=2020-02-22, type=Cumparare POS, details=Nr. card:**** **** **** 0843;Terminal:ENEEA RO BUCURESTI, amount=-105.0]
+DEBUG 2020-03-19 14:04:58.892 --- [.1-8081-exec-10] c.a.x.c.TransactionController            : uid: 1; unit: month
+DEBUG 2020-03-19 14:04:58.892 --- [.1-8081-exec-10] c.a.x.d.TransactionDAO                   : DB queries: 
+ INFO 2020-03-19 14:04:58.892 --- [.1-8081-exec-10] c.a.x.d.TransactionDAO                   : SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH)
+ INFO 2020-03-19 14:04:58.897 --- [.1-8081-exec-10] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-03-19 14:04:58.900 --- [.1-8081-exec-10] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-03-19 14:04:58.904 --- [.1-8081-exec-10] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-03-19 14:04:58.909 --- [.1-8081-exec-10] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-03-19 14:04:58.913 --- [.1-8081-exec-10] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 MONTH) AND DATE(NOW() - INTERVAL 1 MONTH)
+DEBUG 2020-03-19 14:04:58.917 --- [.1-8081-exec-10] c.a.x.d.TransactionDAO                   : Transactions retrieved:
+DEBUG 2020-03-19 14:04:58.917 --- [.1-8081-exec-10] c.a.x.d.TransactionDAO                   : Transaction [tid=5, uid=1, drequest=2020-02-29, dprocess=2020-02-29, type=Incasare, details=Referinta:1634;Ordonator:Micu Ana;Din contul:RO76INGB0000999908307205, amount=500.0]
+DEBUG 2020-03-19 14:04:58.917 --- [.1-8081-exec-10] c.a.x.d.TransactionDAO                   : Transaction [tid=6, uid=1, drequest=2020-02-20, dprocess=2020-02-22, type=Cumparare POS, details=Nr. card:**** **** **** 0843;Terminal:ENEEA RO BUCURESTI, amount=-105.0]

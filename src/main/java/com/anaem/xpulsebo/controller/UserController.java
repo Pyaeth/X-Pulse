@@ -2,13 +2,13 @@ package com.anaem.xpulsebo.controller;
 
 import java.util.Optional;
 
-import org.apache.commons.codec.digest.DigestUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,16 +29,17 @@ import com.anaem.xpulsebo.utils.Consts;
 public class UserController {
 	
     UserService userService = new UserService();
-	
+    private static final Logger logger = LogManager.getLogger(UserController.class);
+    
 	@SuppressWarnings("rawtypes")
 	@PostMapping(value = "/login")
     public ResponseEntity getValidLogin(@RequestBody User user) throws Exception {
 		Optional<User> checkUser = userService.getUserLogin(user.getUsername(), user.getPassword());
         if (checkUser.isPresent()) {
-        	System.out.println("User " + user.getUsername() + " attempted to login: " + "Successful!");
+        	logger.debug("User " + user.getUsername() + " attempted to login: " + "Successful!");
     		return ResponseEntity.ok(checkUser);
     	} else {
-    		System.out.print("User " + user.getUsername() + " attempted to login: " + "Failed!");
+    		logger.error("User " + user.getUsername() + " attempted to login: " + "Failed!");
     		return ResponseEntity.badRequest().body("invalid combination username/password!");
     	}
     	
@@ -46,7 +47,7 @@ public class UserController {
 	
     @PostMapping(path="/create")
     public ResponseEntity createNewUser(@RequestBody User user) throws Exception { 
-    	System.out.println("New user created: "+user.getUsername());
+    	logger.debug("New user created: "+user.getUsername());
         Optional<User> checkUser = userService.addNewUser(user);
         if (checkUser.isPresent()) {
         	return ResponseEntity.ok(checkUser.get());
@@ -57,7 +58,7 @@ public class UserController {
     
     @PostMapping(path="/changeUsername")
     public ResponseEntity changeUsername(@RequestBody User user) throws Exception { 
-    	System.out.println(user);
+    	logger.debug(user);
         Optional<User> checkUser = userService.changeUsername(user);
         if (checkUser.isPresent()) {
         	return ResponseEntity.ok(checkUser.get());

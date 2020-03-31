@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
 
 import com.anaem.xpulsebo.dao.TransactionDAO;
@@ -14,7 +16,7 @@ import com.anaem.xpulsebo.model.Transaction;
 @Service
 public class TransactionService {
 	TransactionDAO dao = new TransactionDAO();
-	
+	private static final Logger logger = LogManager.getLogger(TransactionDAO.class);
 	public Optional<List<Transaction>> retrieveAllTransactions(int uid) throws Exception {
 		return dao.retrieveAllTransactions(uid);
 	}
@@ -24,7 +26,7 @@ public class TransactionService {
 	}
 	
 	public Optional<Statistic> retrieveTransactionsInPeriod(int uid, String interval) throws Exception {
-		System.out.println("DB queries: ");
+		logger.debug("DB queries: ");
 		List<Transaction> transactions = dao.retrieveTransactionsInPeriod(uid, interval).get();
 		Statistic statistic = new Statistic();
 		statistic.setNoIncoming(dao.countTransactions(uid, ">=", interval));
@@ -35,8 +37,8 @@ public class TransactionService {
 		statistic.setBalance(statistic.getIncoming() + statistic.getOutgoing());
 		statistic.setComparedToLast(statistic.getBalance() - dao.sumTransactionsLast(uid, interval));
 		
-		System.out.println("Transactions retrieved:");
-		transactions.forEach(System.out::println);
+		logger.debug("Transactions retrieved:");
+		transactions.forEach(logger::debug);
 		statistic.statisticsFlt = new HashMap<>();
 		statistic.statisticsInt = new HashMap<>();
 		
