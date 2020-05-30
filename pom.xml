@@ -102,6 +102,16 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.18</version>
 		</dependency>
+		<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.13.3</version>
+  </dependency>
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.13.3</version>
+  </dependency>
 		<!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
 		<dependency>
 			<groupId>commons-fileupload</groupId>
@@ -117,7 +127,35 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+                    <profiles>
+                        <profile>${my.active.spring.profiles}</profile>
+                    </profiles>
+                </configuration>
 			</plugin>
 		</plugins>
+		<resources>
+	        <resource>
+	            <directory>src/main/resources</directory>
+	            <filtering>true</filtering>
+	        </resource>
+	    </resources>
 	</build>
+	<profiles>
+		<profile>
+	    	<id>dev</id>
+	    	<properties>
+	        	<activatedProperties>dev</activatedProperties>
+	    	</properties>
+	    	<activation>
+	        	<activeByDefault>true</activeByDefault>
+	    	</activation>
+		</profile>
+		<profile>
+		    <id>prod</id>
+		    <properties>
+		        <activatedProperties>prod</activatedProperties>
+		    </properties>
+		</profile>
+	</profiles>
 </project>  

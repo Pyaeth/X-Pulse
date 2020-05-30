@@ -1,0 +1,111 @@
+ INFO 2020-05-29 18:02:26.274 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 13324 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-29 18:02:26.287 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-29 18:02:26.288 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ERROR 2020-05-29 18:02:48.861 --- [  restartedMain] c.a.x.d.TransactionDAO                   : Could not connect to address=(host=10.10.0.14)(port=3306)(type=master) : Socket fail to connect to host:10.10.0.14, port:3306. Connection timed out: connect
+ERROR 2020-05-29 18:03:09.865 --- [  restartedMain] c.a.x.d.UserDAO                          : Could not connect to address=(host=10.10.0.14)(port=3306)(type=master) : Socket fail to connect to host:10.10.0.14, port:3306. Connection timed out: connect
+ERROR 2020-05-29 18:03:30.874 --- [  restartedMain] c.a.x.d.TransactionDAO                   : Could not connect to address=(host=10.10.0.14)(port=3306)(type=master) : Socket fail to connect to host:10.10.0.14, port:3306. Connection timed out: connect
+ERROR 2020-05-29 18:03:51.891 --- [  restartedMain] c.a.x.d.UserDAO                          : Could not connect to address=(host=10.10.0.14)(port=3306)(type=master) : Socket fail to connect to host:10.10.0.14, port:3306. Connection timed out: connect
+ INFO 2020-05-29 18:03:52.317 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 86.43 seconds (JVM running for 91.535)
+DEBUG 2020-05-29 18:05:45.163 --- [0.1-8081-exec-1] c.a.x.d.UserDAO                          : TEST_a sj+Q4Q9grUvAdirTD+EcCA==
+DEBUG 2020-05-29 18:05:49.903 --- [0.1-8081-exec-2] c.a.x.d.UserDAO                          : admin uFErWAnGrvRK4tNOF7tCWw==
+DEBUG 2020-05-29 18:06:03.753 --- [0.1-8081-exec-4] c.a.x.c.UserController                   : New user created: Ana
+ INFO 2020-05-29 18:09:34.966 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 13324 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-29 18:09:34.967 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-29 18:09:34.967 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ERROR 2020-05-29 18:09:56.301 --- [  restartedMain] c.a.x.d.TransactionDAO                   : Could not connect to address=(host=10.10.0.14)(port=3306)(type=master) : Socket fail to connect to host:10.10.0.14, port:3306. Connection timed out: connect
+ INFO 2020-05-29 18:10:51.796 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 16888 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-29 18:10:51.802 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-29 18:10:51.803 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ERROR 2020-05-29 18:11:13.814 --- [  restartedMain] c.a.x.d.TransactionDAO                   : Could not connect to address=(host=10.10.0.14)(port=3306)(type=master) : Socket fail to connect to host:10.10.0.14, port:3306. Connection timed out: connect
+ERROR 2020-05-29 18:11:34.823 --- [  restartedMain] c.a.x.d.UserDAO                          : Could not connect to address=(host=10.10.0.14)(port=3306)(type=master) : Socket fail to connect to host:10.10.0.14, port:3306. Connection timed out: connect
+ERROR 2020-05-29 18:11:55.844 --- [  restartedMain] c.a.x.d.TransactionDAO                   : Could not connect to address=(host=10.10.0.14)(port=3306)(type=master) : Socket fail to connect to host:10.10.0.14, port:3306. Connection timed out: connect
+ERROR 2020-05-29 18:12:16.851 --- [  restartedMain] c.a.x.d.UserDAO                          : Could not connect to address=(host=10.10.0.14)(port=3306)(type=master) : Socket fail to connect to host:10.10.0.14, port:3306. Connection timed out: connect
+ INFO 2020-05-29 18:12:17.304 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 85.885 seconds (JVM running for 87.267)
+DEBUG 2020-05-29 18:12:28.866 --- [0.1-8081-exec-1] c.a.x.d.UserDAO                          : Ana XSgm0nmVv+cFdoVVUeg6Fg==
+ INFO 2020-05-29 18:14:48.275 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 20120 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-29 18:14:48.284 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-29 18:14:48.284 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ERROR 2020-05-29 18:15:10.259 --- [  restartedMain] c.a.x.d.TransactionDAO                   : Could not connect to address=(host=10.10.0.14)(port=3306)(type=master) : Socket fail to connect to host:10.10.0.14, port:3306. Connection timed out: connect
+ERROR 2020-05-29 18:15:31.269 --- [  restartedMain] c.a.x.d.UserDAO                          : Could not connect to address=(host=10.10.0.14)(port=3306)(type=master) : Socket fail to connect to host:10.10.0.14, port:3306. Connection timed out: connect
+ERROR 2020-05-29 18:15:52.288 --- [  restartedMain] c.a.x.d.TransactionDAO                   : Could not connect to address=(host=10.10.0.14)(port=3306)(type=master) : Socket fail to connect to host:10.10.0.14, port:3306. Connection timed out: connect
+ INFO 2020-05-29 18:16:07.720 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 2100 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-29 18:16:07.726 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-29 18:16:07.727 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-05-29 18:16:09.420 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 1.979 seconds (JVM running for 3.256)
+DEBUG 2020-05-29 18:16:24.727 --- [0.1-8081-exec-1] c.a.x.d.UserDAO                          : Ana XSgm0nmVv+cFdoVVUeg6Fg==
+ WARN 2020-05-29 18:16:24.740 --- [0.1-8081-exec-1] c.a.x.d.UserDAO                          : Invalid combination of username and password.
+ERROR 2020-05-29 18:16:24.740 --- [0.1-8081-exec-1] c.a.x.c.UserController                   : User Ana attempted to login: Failed!
+DEBUG 2020-05-29 18:16:31.345 --- [0.1-8081-exec-2] c.a.x.d.UserDAO                          : Ana B5xjPDP/KyxF0Cy2mpncVw==
+ WARN 2020-05-29 18:16:31.351 --- [0.1-8081-exec-2] c.a.x.d.UserDAO                          : Invalid combination of username and password.
+ERROR 2020-05-29 18:16:31.351 --- [0.1-8081-exec-2] c.a.x.c.UserController                   : User Ana attempted to login: Failed!
+DEBUG 2020-05-29 18:17:05.669 --- [0.1-8081-exec-3] c.a.x.c.UserController                   : New user created: AnnaAdmin
+ WARN 2020-05-29 18:17:05.673 --- [0.1-8081-exec-3] c.a.x.d.UserDAO                          : No such username found!
+DEBUG 2020-05-29 18:17:05.777 --- [0.1-8081-exec-5] c.a.x.c.TransactionController            : uid: 2; unit: month
+DEBUG 2020-05-29 18:17:05.777 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : DB queries: 
+ INFO 2020-05-29 18:17:05.777 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH)
+ INFO 2020-05-29 18:17:05.783 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-05-29 18:17:05.786 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-05-29 18:17:05.790 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-05-29 18:17:05.793 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-05-29 18:17:05.797 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 MONTH) AND DATE(NOW() - INTERVAL 1 MONTH)
+DEBUG 2020-05-29 18:17:05.800 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : Transactions retrieved:
+ INFO 2020-05-29 20:25:06.812 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 19480 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-29 20:25:06.820 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-29 20:25:06.821 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-05-29 20:25:08.269 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 1.766 seconds (JVM running for 3.249)
+DEBUG 2020-05-29 20:25:51.173 --- [0.1-8081-exec-2] c.a.x.c.TransactionController            : uid: 1; unit: month
+DEBUG 2020-05-29 20:25:51.173 --- [0.1-8081-exec-2] c.a.x.d.TransactionDAO                   : DB queries: 
+ INFO 2020-05-29 20:25:51.173 --- [0.1-8081-exec-2] c.a.x.d.TransactionDAO                   : SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH)
+ INFO 2020-05-29 20:25:51.183 --- [0.1-8081-exec-2] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-05-29 20:25:51.190 --- [0.1-8081-exec-2] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-05-29 20:25:51.195 --- [0.1-8081-exec-2] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-05-29 20:25:51.198 --- [0.1-8081-exec-2] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-05-29 20:25:51.202 --- [0.1-8081-exec-2] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 MONTH) AND DATE(NOW() - INTERVAL 1 MONTH)
+DEBUG 2020-05-29 20:25:51.207 --- [0.1-8081-exec-2] c.a.x.d.TransactionDAO                   : Transactions retrieved:
+DEBUG 2020-05-29 20:26:07.300 --- [0.1-8081-exec-4] c.a.x.d.UserDAO                          : Admin2 uFErWAnGrvRK4tNOF7tCWw==
+DEBUG 2020-05-29 20:26:07.305 --- [0.1-8081-exec-4] c.a.x.c.UserController                   : User Admin2 attempted to login: Successful!
+DEBUG 2020-05-29 20:26:07.326 --- [0.1-8081-exec-5] c.a.x.c.TransactionController            : uid: 1; unit: month
+DEBUG 2020-05-29 20:26:07.326 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : DB queries: 
+ INFO 2020-05-29 20:26:07.327 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH)
+ INFO 2020-05-29 20:26:07.333 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-05-29 20:26:07.338 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-05-29 20:26:07.341 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-05-29 20:26:07.344 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-05-29 20:26:07.348 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 MONTH) AND DATE(NOW() - INTERVAL 1 MONTH)
+DEBUG 2020-05-29 20:26:07.352 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : Transactions retrieved:
+ INFO 2020-05-29 20:33:36.803 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 19480 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-29 20:33:36.804 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-29 20:33:36.804 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-05-29 20:33:37.544 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.827 seconds (JVM running for 512.524)
+ INFO 2020-05-29 20:34:23.334 --- [           main] c.a.x.BoXPulseApplicationTests           : Starting BoXPulseApplicationTests on Ely-N751JK with PID 5624 (started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-29 20:34:23.337 --- [           main] c.a.x.BoXPulseApplicationTests           : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-29 20:34:23.338 --- [           main] c.a.x.BoXPulseApplicationTests           : No active profile set, falling back to default profiles: default
+ INFO 2020-05-29 20:34:25.598 --- [           main] c.a.x.BoXPulseApplicationTests           : Started BoXPulseApplicationTests in 2.584 seconds (JVM running for 4.359)
+ INFO 2020-05-29 20:34:45.619 --- [           main] c.a.x.BoXPulseApplicationTests           : Starting BoXPulseApplicationTests on Ely-N751JK with PID 20792 (started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-29 20:34:45.622 --- [           main] c.a.x.BoXPulseApplicationTests           : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-29 20:34:45.622 --- [           main] c.a.x.BoXPulseApplicationTests           : No active profile set, falling back to default profiles: default
+ INFO 2020-05-29 20:34:47.853 --- [           main] c.a.x.BoXPulseApplicationTests           : Started BoXPulseApplicationTests in 2.514 seconds (JVM running for 4.329)
+ INFO 2020-05-29 20:34:54.808 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 13936 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-29 20:34:54.815 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-29 20:34:54.816 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-05-29 20:34:56.286 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 1.762 seconds (JVM running for 2.958)
+DEBUG 2020-05-29 20:35:08.464 --- [0.1-8081-exec-1] c.a.x.c.TransactionController            : uid: 1; unit: month
+DEBUG 2020-05-29 20:35:08.464 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : DB queries: 
+ INFO 2020-05-29 20:35:08.464 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH)
+ INFO 2020-05-29 20:35:08.470 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-05-29 20:35:08.475 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-05-29 20:35:08.479 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-05-29 20:35:08.483 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-05-29 20:35:08.487 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 MONTH) AND DATE(NOW() - INTERVAL 1 MONTH)
+DEBUG 2020-05-29 20:35:08.491 --- [0.1-8081-exec-1] c.a.x.d.TransactionDAO                   : Transactions retrieved:
+DEBUG 2020-05-29 20:35:16.419 --- [0.1-8081-exec-2] c.a.x.d.UserDAO                          : Admin2 uFErWAnGrvRK4tNOF7tCWw==
+DEBUG 2020-05-29 20:35:16.424 --- [0.1-8081-exec-2] c.a.x.c.UserController                   : User Admin2 attempted to login: Successful!
+DEBUG 2020-05-29 20:35:16.452 --- [0.1-8081-exec-3] c.a.x.c.TransactionController            : uid: 1; unit: month
+DEBUG 2020-05-29 20:35:16.452 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : DB queries: 
+ INFO 2020-05-29 20:35:16.452 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH)
+ INFO 2020-05-29 20:35:16.458 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-05-29 20:35:16.462 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-05-29 20:35:16.466 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-05-29 20:35:16.469 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-05-29 20:35:16.473 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 MONTH) AND DATE(NOW() - INTERVAL 1 MONTH)
+DEBUG 2020-05-29 20:35:16.478 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : Transactions retrieved:
