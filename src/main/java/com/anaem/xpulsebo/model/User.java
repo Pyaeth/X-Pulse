@@ -3,13 +3,34 @@ package com.anaem.xpulsebo.model;
 import com.anaem.xpulsebo.utils.AES;
 import com.anaem.xpulsebo.utils.Consts;
 
+import javax.persistence.*;
+
 public class User {
 	private int id;
+
 	private String username;
 	private String password;
 	private String firstname;
 	private String lastname;
 	private String role;
+	private byte[] profilePic;
+	private Preferences preferences;
+
+	public Preferences getPreferences() {
+		return preferences;
+	}
+
+	public void setPreferences(Preferences preferences) {
+		this.preferences = preferences;
+	}
+
+	public byte[] getProfilePic() {
+		return profilePic;
+	}
+
+	public void setProfilePic(byte[] profilePic) {
+		this.profilePic = profilePic;
+	}
 
 	public int getId() {
 		return id;

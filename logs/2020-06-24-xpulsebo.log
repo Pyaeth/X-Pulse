@@ -1,0 +1,51 @@
+ INFO 2020-06-24 13:59:38.164 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 13456 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-06-24 13:59:38.177 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-06-24 13:59:38.177 --- [  restartedMain] c.a.x.BoXPulseApplication                : The following profiles are active: prod
+ INFO 2020-06-24 14:03:04.830 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 1604 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-06-24 14:03:04.838 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-06-24 14:03:04.838 --- [  restartedMain] c.a.x.BoXPulseApplication                : The following profiles are active: prod
+ INFO 2020-06-24 14:03:27.583 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 13308 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-06-24 14:03:27.589 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-06-24 14:03:27.589 --- [  restartedMain] c.a.x.BoXPulseApplication                : The following profiles are active: dev
+ INFO 2020-06-24 14:03:28.989 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 1.677 seconds (JVM running for 2.805)
+DEBUG 2020-06-24 14:18:25.419 --- [0.1-8081-exec-2] c.a.x.d.UserDAO                          : TEST_a sj+Q4Q9grUvAdirTD+EcCA==
+ WARN 2020-06-24 14:18:25.431 --- [0.1-8081-exec-2] c.a.x.d.UserDAO                          : Invalid combination of username and password.
+ERROR 2020-06-24 14:18:25.431 --- [0.1-8081-exec-2] c.a.x.c.UserController                   : User TEST_a attempted to login: Failed!
+DEBUG 2020-06-24 14:18:34.257 --- [0.1-8081-exec-3] c.a.x.d.UserDAO                          : Admin +eZckiglQfFxMIGqeAuyhw==
+ WARN 2020-06-24 14:18:34.262 --- [0.1-8081-exec-3] c.a.x.d.UserDAO                          : Invalid combination of username and password.
+ERROR 2020-06-24 14:18:34.263 --- [0.1-8081-exec-3] c.a.x.c.UserController                   : User Admin attempted to login: Failed!
+DEBUG 2020-06-24 14:18:36.812 --- [0.1-8081-exec-4] c.a.x.d.UserDAO                          : Admin +eZckiglQfFxMIGqeAuyhw==
+ WARN 2020-06-24 14:18:36.817 --- [0.1-8081-exec-4] c.a.x.d.UserDAO                          : Invalid combination of username and password.
+ERROR 2020-06-24 14:18:36.817 --- [0.1-8081-exec-4] c.a.x.c.UserController                   : User Admin attempted to login: Failed!
+DEBUG 2020-06-24 14:18:38.343 --- [0.1-8081-exec-5] c.a.x.d.UserDAO                          : Admin uFErWAnGrvRK4tNOF7tCWw==
+ WARN 2020-06-24 14:18:38.349 --- [0.1-8081-exec-5] c.a.x.d.UserDAO                          : Invalid combination of username and password.
+ERROR 2020-06-24 14:18:38.349 --- [0.1-8081-exec-5] c.a.x.c.UserController                   : User Admin attempted to login: Failed!
+DEBUG 2020-06-24 14:18:43.112 --- [0.1-8081-exec-6] c.a.x.d.UserDAO                          : Admin2 uFErWAnGrvRK4tNOF7tCWw==
+DEBUG 2020-06-24 14:18:43.346 --- [0.1-8081-exec-6] c.a.x.c.UserController                   : User Admin2 attempted to login: Successful!
+DEBUG 2020-06-24 14:18:43.477 --- [0.1-8081-exec-8] c.a.x.c.TransactionController            : uid: 1; unit: month
+DEBUG 2020-06-24 14:18:43.477 --- [0.1-8081-exec-8] c.a.x.d.TransactionDAO                   : DB queries: 
+ INFO 2020-06-24 14:18:43.477 --- [0.1-8081-exec-8] c.a.x.d.TransactionDAO                   : SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH)
+ INFO 2020-06-24 14:18:43.488 --- [0.1-8081-exec-8] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-06-24 14:18:43.491 --- [0.1-8081-exec-8] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-06-24 14:18:43.496 --- [0.1-8081-exec-8] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-06-24 14:18:43.501 --- [0.1-8081-exec-8] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-06-24 14:18:43.506 --- [0.1-8081-exec-8] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 MONTH) AND DATE(NOW() - INTERVAL 1 MONTH)
+DEBUG 2020-06-24 14:18:43.510 --- [0.1-8081-exec-8] c.a.x.d.TransactionDAO                   : Transactions retrieved:
+DEBUG 2020-06-24 14:57:24.325 --- [0.1-8081-exec-2] c.a.x.c.TransactionController            : uid: 1; unit: month
+DEBUG 2020-06-24 14:57:24.326 --- [0.1-8081-exec-2] c.a.x.d.TransactionDAO                   : DB queries: 
+ INFO 2020-06-24 14:57:24.326 --- [0.1-8081-exec-2] c.a.x.d.TransactionDAO                   : SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH)
+ INFO 2020-06-24 14:57:24.332 --- [0.1-8081-exec-2] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-06-24 14:57:24.335 --- [0.1-8081-exec-2] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-06-24 14:57:24.338 --- [0.1-8081-exec-2] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-06-24 14:57:24.342 --- [0.1-8081-exec-2] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-06-24 14:57:24.346 --- [0.1-8081-exec-2] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 MONTH) AND DATE(NOW() - INTERVAL 1 MONTH)
+DEBUG 2020-06-24 14:57:24.349 --- [0.1-8081-exec-2] c.a.x.d.TransactionDAO                   : Transactions retrieved:
+DEBUG 2020-06-24 14:57:29.283 --- [0.1-8081-exec-3] c.a.x.c.TransactionController            : uid: 1; unit: month
+DEBUG 2020-06-24 14:57:29.283 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : DB queries: 
+ INFO 2020-06-24 14:57:29.283 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH)
+ INFO 2020-06-24 14:57:29.288 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-06-24 14:57:29.292 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-06-24 14:57:29.296 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-06-24 14:57:29.300 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-06-24 14:57:29.303 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 MONTH) AND DATE(NOW() - INTERVAL 1 MONTH)
+DEBUG 2020-06-24 14:57:29.306 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : Transactions retrieved:

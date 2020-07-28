@@ -1,22 +1,39 @@
 package com.anaem.xpulsebo.model;
 
+import javax.persistence.*;
 import java.util.Map;
 
 public class Statistic {
-	
+
+	private int id;
+	private User user;
 	private int noOfTransactions;
 	private int noIncoming;
 	private int noOutgoing;
-
 	private float incoming;
 	private float outgoing;
-	
 	private float balance;
 	private float comparedToLast;
-	
+
 	public Map<String, Integer> statisticsInt;
 	public Map<String, Float> statisticsFlt;
-	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
 	public int getNoOfTransactions() {
 		return noOfTransactions;
 	}

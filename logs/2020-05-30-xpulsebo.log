@@ -1,0 +1,108 @@
+ INFO 2020-05-30 10:16:34.138 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 5952 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 10:16:34.152 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 10:16:34.152 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-05-30 10:16:35.930 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 2.075 seconds (JVM running for 3.516)
+DEBUG 2020-05-30 10:31:33.204 --- [0.1-8081-exec-2] c.a.x.d.UserDAO                          : Admin2 uFErWAnGrvRK4tNOF7tCWw==
+ERROR 2020-05-30 10:31:33.206 --- [0.1-8081-exec-2] c.a.x.d.UserDAO                          : (conn=135) Connection was killed
+DEBUG 2020-05-30 10:31:33.207 --- [0.1-8081-exec-2] c.a.x.c.UserController                   : User Admin2 attempted to login: Successful!
+ INFO 2020-05-30 10:37:39.230 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 5952 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 10:37:39.231 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 10:37:39.231 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-05-30 10:37:39.832 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.686 seconds (JVM running for 1267.418)
+ INFO 2020-05-30 10:37:41.588 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 5952 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 10:37:41.589 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 10:37:41.589 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-05-30 10:37:42.120 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.615 seconds (JVM running for 1269.705)
+ INFO 2020-05-30 10:37:52.195 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 5952 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 10:37:52.196 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 10:37:52.197 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-05-30 10:37:52.658 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.548 seconds (JVM running for 1280.243)
+ INFO 2020-05-30 10:37:54.627 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 5952 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 10:37:54.628 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 10:37:54.628 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-05-30 10:37:55.280 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.714 seconds (JVM running for 1282.866)
+ INFO 2020-05-30 10:37:57.162 --- [           main] c.a.x.BoXPulseApplicationTests           : Starting BoXPulseApplicationTests on Ely-N751JK with PID 6480 (started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 10:37:57.165 --- [           main] c.a.x.BoXPulseApplicationTests           : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 10:37:57.165 --- [           main] c.a.x.BoXPulseApplicationTests           : No active profile set, falling back to default profiles: default
+ INFO 2020-05-30 10:37:59.272 --- [           main] c.a.x.BoXPulseApplicationTests           : Started BoXPulseApplicationTests in 2.384 seconds (JVM running for 4.194)
+DEBUG 2020-05-30 10:43:05.043 --- [0.1-8081-exec-4] c.a.x.d.UserDAO                          : Admin2 uFErWAnGrvRK4tNOF7tCWw==
+DEBUG 2020-05-30 10:43:05.049 --- [0.1-8081-exec-4] c.a.x.c.UserController                   : User Admin2 attempted to login: Successful!
+DEBUG 2020-05-30 10:43:05.171 --- [0.1-8081-exec-8] c.a.x.c.TransactionController            : uid: 1; unit: month
+DEBUG 2020-05-30 10:43:05.171 --- [0.1-8081-exec-8] c.a.x.d.TransactionDAO                   : DB queries: 
+ INFO 2020-05-30 10:43:05.171 --- [0.1-8081-exec-8] c.a.x.d.TransactionDAO                   : SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH)
+ INFO 2020-05-30 10:43:05.177 --- [0.1-8081-exec-8] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-05-30 10:43:05.183 --- [0.1-8081-exec-8] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-05-30 10:43:05.190 --- [0.1-8081-exec-8] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-05-30 10:43:05.196 --- [0.1-8081-exec-8] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-05-30 10:43:05.200 --- [0.1-8081-exec-8] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 MONTH) AND DATE(NOW() - INTERVAL 1 MONTH)
+DEBUG 2020-05-30 10:43:05.204 --- [0.1-8081-exec-8] c.a.x.d.TransactionDAO                   : Transactions retrieved:
+ INFO 2020-05-30 10:46:51.045 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 5952 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 10:46:51.046 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 10:46:51.046 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-05-30 10:46:51.501 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.502 seconds (JVM running for 1819.086)
+ INFO 2020-05-30 10:47:04.207 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 5952 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 10:47:04.207 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 10:47:04.207 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-05-30 10:47:04.643 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.483 seconds (JVM running for 1832.229)
+ INFO 2020-05-30 10:47:44.512 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 5952 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 10:47:44.513 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 10:47:44.513 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-05-30 10:47:45.141 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.671 seconds (JVM running for 1872.727)
+ INFO 2020-05-30 10:47:48.774 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 5952 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 10:47:48.775 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 10:47:48.775 --- [  restartedMain] c.a.x.BoXPulseApplication                : No active profile set, falling back to default profiles: default
+ INFO 2020-05-30 10:47:49.224 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.488 seconds (JVM running for 1876.809)
+ INFO 2020-05-30 10:55:24.933 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 5952 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 10:55:24.933 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 10:55:24.934 --- [  restartedMain] c.a.x.BoXPulseApplication                : The following profiles are active: dev
+ INFO 2020-05-30 10:55:25.430 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.545 seconds (JVM running for 2333.015)
+ INFO 2020-05-30 10:59:50.893 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 5952 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 10:59:50.894 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 10:59:50.894 --- [  restartedMain] c.a.x.BoXPulseApplication                : The following profiles are active: dev
+ INFO 2020-05-30 10:59:51.377 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.528 seconds (JVM running for 2598.963)
+DEBUG 2020-05-30 11:03:01.686 --- [0.1-8081-exec-2] c.a.x.d.UserDAO                          : Admin2 uFErWAnGrvRK4tNOF7tCWw==
+DEBUG 2020-05-30 11:03:01.692 --- [0.1-8081-exec-2] c.a.x.c.UserController                   : User Admin2 attempted to login: Successful!
+DEBUG 2020-05-30 11:03:01.768 --- [0.1-8081-exec-3] c.a.x.c.TransactionController            : uid: 1; unit: month
+DEBUG 2020-05-30 11:03:01.768 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : DB queries: 
+ INFO 2020-05-30 11:03:01.768 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH)
+ INFO 2020-05-30 11:03:01.856 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-05-30 11:03:01.860 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-05-30 11:03:01.864 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-05-30 11:03:01.868 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-05-30 11:03:01.872 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 MONTH) AND DATE(NOW() - INTERVAL 1 MONTH)
+DEBUG 2020-05-30 11:03:01.875 --- [0.1-8081-exec-3] c.a.x.d.TransactionDAO                   : Transactions retrieved:
+DEBUG 2020-05-30 11:03:15.982 --- [0.1-8081-exec-5] c.a.x.c.TransactionController            : uid: 1; unit: month
+DEBUG 2020-05-30 11:03:15.982 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : DB queries: 
+ INFO 2020-05-30 11:03:15.982 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT t.*, u.username FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH)
+ INFO 2020-05-30 11:03:15.986 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-05-30 11:03:15.990 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT COUNT(*) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-05-30 11:03:15.993 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount >= 0 
+ INFO 2020-05-30 11:03:15.997 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest >= DATE(NOW() - INTERVAL 1 MONTH) AND t.amount < 0 
+ INFO 2020-05-30 11:03:16.001 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : SELECT SUM(t.amount) FROM transactions t, users u WHERE t.uid = u.id AND t.uid = ? AND t.drequest BETWEEN DATE(NOW() - INTERVAL 2 MONTH) AND DATE(NOW() - INTERVAL 1 MONTH)
+DEBUG 2020-05-30 11:03:16.004 --- [0.1-8081-exec-5] c.a.x.d.TransactionDAO                   : Transactions retrieved:
+ INFO 2020-05-30 11:06:18.630 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 5952 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 11:06:18.631 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 11:06:18.631 --- [  restartedMain] c.a.x.BoXPulseApplication                : The following profiles are active: dev
+ INFO 2020-05-30 11:06:19.087 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.517 seconds (JVM running for 2986.672)
+ INFO 2020-05-30 11:07:09.946 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 5952 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 11:07:09.946 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 11:07:09.947 --- [  restartedMain] c.a.x.BoXPulseApplication                : The following profiles are active: prod
+ INFO 2020-05-30 11:07:33.441 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 5952 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 11:07:33.441 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 11:07:33.441 --- [  restartedMain] c.a.x.BoXPulseApplication                : The following profiles are active: dev
+ INFO 2020-05-30 11:07:33.858 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.484 seconds (JVM running for 3061.443)
+ INFO 2020-05-30 11:07:35.465 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 5952 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 11:07:35.466 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 11:07:35.466 --- [  restartedMain] c.a.x.BoXPulseApplication                : The following profiles are active: dev
+ INFO 2020-05-30 11:07:36.080 --- [  restartedMain] c.a.x.BoXPulseApplication                : Started BoXPulseApplication in 0.694 seconds (JVM running for 3063.665)
+ INFO 2020-05-30 11:07:36.934 --- [           main] c.a.x.BoXPulseApplicationTests           : Starting BoXPulseApplicationTests on Ely-N751JK with PID 19240 (started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 11:07:36.937 --- [           main] c.a.x.BoXPulseApplicationTests           : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 11:07:36.938 --- [           main] c.a.x.BoXPulseApplicationTests           : The following profiles are active: dev
+ INFO 2020-05-30 11:07:39.088 --- [           main] c.a.x.BoXPulseApplicationTests           : Started BoXPulseApplicationTests in 2.429 seconds (JVM running for 4.321)
+ INFO 2020-05-30 11:09:58.104 --- [  restartedMain] c.a.x.BoXPulseApplication                : Starting BoXPulseApplication on Ely-N751JK with PID 5952 (F:\VisualStudioCode\Projects\BO-XPulse\target\classes started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 11:09:58.104 --- [  restartedMain] c.a.x.BoXPulseApplication                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 11:09:58.104 --- [  restartedMain] c.a.x.BoXPulseApplication                : The following profiles are active: prod
+ INFO 2020-05-30 11:10:01.074 --- [           main] c.a.x.BoXPulseApplicationTests           : Starting BoXPulseApplicationTests on Ely-N751JK with PID 7896 (started by anaem in F:\VisualStudioCode\Projects\BO-XPulse)
+DEBUG 2020-05-30 11:10:01.078 --- [           main] c.a.x.BoXPulseApplicationTests           : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+ INFO 2020-05-30 11:10:01.078 --- [           main] c.a.x.BoXPulseApplicationTests           : The following profiles are active: prod
+ INFO 2020-05-30 11:10:05.914 --- [           main] c.a.x.BoXPulseApplicationTests           : Started BoXPulseApplicationTests in 5.135 seconds (JVM running for 6.807)

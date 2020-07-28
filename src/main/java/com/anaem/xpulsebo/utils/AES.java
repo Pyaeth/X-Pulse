@@ -12,8 +12,6 @@ import javax.crypto.spec.SecretKeySpec;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.anaem.xpulsebo.dao.TransactionDAO;
-
 public class AES {
 
 	private static SecretKeySpec secretKey;

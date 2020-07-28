@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.anaem.xpulsebo.model.Preferences;
 import com.anaem.xpulsebo.model.User;
 import com.anaem.xpulsebo.service.UserService;
 import com.anaem.xpulsebo.utils.AES;
@@ -64,6 +66,17 @@ public class UserController {
         	return ResponseEntity.ok(checkUser.get());
         } else {
             return ResponseEntity.badRequest().body("user already exists!");
+        }
+    }
+    
+    @PostMapping(path="/changeUserPrefs")
+    public ResponseEntity changeUserPrefs(@RequestParam int id, @RequestBody Preferences preferences) throws Exception { 
+    	logger.debug(preferences);
+        Optional<User> checkUser = userService.changeUserPreferences(id, preferences);
+        if (checkUser.isPresent()) {
+        	return ResponseEntity.ok(checkUser.get());
+        } else {
+            return ResponseEntity.badRequest().body("invalid user!");
         }
     }
 

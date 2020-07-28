@@ -9,7 +9,6 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
-import com.anaem.xpulsebo.controller.UserController;
 import com.anaem.xpulsebo.utils.Consts;
 
 @Configuration

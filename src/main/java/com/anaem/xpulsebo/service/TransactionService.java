@@ -24,7 +24,7 @@ public class TransactionService {
 	public Optional<Transaction> addNewTransaction(Transaction t) throws SQLException {
 		return dao.addNewTransaction(t);
 	}
-	
+
 	public Optional<Statistic> retrieveTransactionsInPeriod(int uid, String interval) throws Exception {
 		logger.debug("DB queries: ");
 		List<Transaction> transactions = dao.retrieveTransactionsInPeriod(uid, interval).get();
@@ -57,11 +57,11 @@ public class TransactionService {
 		}
 		return Optional.ofNullable(statistic);
 	}
-	
+
 	public Optional<List<Transaction>> retrieveTransactionsLastPeriod(int uid, String interval) throws Exception {
 		return dao.retrieveTransactionsLastPeriod(uid, interval);
 	}
-	
+
 	public Optional<Transaction> retrieveTransaction(int uid, int tid) throws Exception {
 		return dao.retrieveTransaction(uid, tid);
 	}
