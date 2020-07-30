@@ -22,8 +22,29 @@ _**Maven**_ profiles are used to differentiate between development and productio
 -	Chart data contains categories of spendings (built using Chart.js)
 - Selectable currency
 ### Further feature development
--	Several bank accounts per user
--	Tailored experience: get individual tips based on statistics to improve savings
--	Starting from a default list of categories for chart data, this list will later become user-customizable and each user will get to choose if he wants to keep this custom-made category private or share it with the other users
-- Implementation of machine-learning mechanism to support several types of bank account statements
-- Upload of shopping receipt for a more detailed report of spendings (also by phone -> to be discussed: mobile app development)
+-	Several bank accounts per user.
+-	Tailored experience: get individual tips based on statistics to improve savings.
+-	Starting from a default list of categories for chart data, this list will later become user-customizable and each user will get to choose if he wants to keep this custom-made category private or share it with the other users.
+- Implementation of machine-learning mechanism to support several types of bank account statements.
+- Upload of shopping receipt for a more detailed report of spendings (also by phone -> to be discussed: mobile app development).
+- Add 3rd party authentication using OAuth 2.0 for faster register and/or login by Facebook/Google/Twitter account.
+## Full presentation
+##### The home page contains advertisement messages, pictures are used under creative-commons 0 license with further addition of text:
+
+[![image.png](https://i.postimg.cc/kGHfNKGj/image.png)](https://postimg.cc/2L4Qrq4v)
+
+##### The carousel of images contains a collection of 4 pictures with tailored advertisement messages, encouraging users to further discover the potential of X-Pulse.
+
+[![image.png](https://i.postimg.cc/dQfBxRQ6/image.png)](https://postimg.cc/fkxm399S)
+
+##### The login page includes error messages in case of new user registration attempt with an already-existing username. Data is stored encrypted in the backend database (currently MariaDB database held on personal Raspberry Pi 4 host, which also serves as the Apache Tomcat 9 server for simulated “production” deliveries).
+
+[![image.png](https://i.postimg.cc/28fPtfS2/image.png)](https://postimg.cc/V5DGSpMC)
+
+##### A successful login redirects the user to the member dashboard page.
+
+[![image.png](https://i.postimg.cc/3r4dr27d/image.png)](https://postimg.cc/ThxRCLK6)
+
+##### myXpulse: User profile/account management. To be added: VIP functionality
+
+[![image.png](https://i.postimg.cc/mg2zQDK9/image.png)](https://postimg.cc/JGvz81r7)
