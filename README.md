@@ -1,3 +1,4 @@
+[![xpulse-repo-img.jpg](https://i.postimg.cc/hjWcSZBr/xpulse-repo-img.jpg)](https://postimg.cc/LqTrDThY)
 # X-Pulse project
 #### --> Backend of the project (current): [BO-XPulse](https://github.com/Pyaeth/BO-XPulse)
 #### --> Frontend of the project (in Angular 6): [xpulseFrontEnd](https://github.com/Pyaeth/xpulseFrontEnd)
